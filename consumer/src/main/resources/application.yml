@@ -1,0 +1,7 @@
+server:
+  port: 8090
+
+provider:
+  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  #设置负载均衡规则 随机
+    NFLoadBalancerRuleClassName: com.bigdata.consumer.configuration.NacosWeightedRule  #设置负载均衡规则 根据权重
